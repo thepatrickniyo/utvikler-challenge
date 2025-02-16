@@ -28,6 +28,12 @@ export default {
   				default: '#FF7A00'
   			},
         "dark-gray": "#808080",
+        dashboard: {
+          DEFAULT: "#CFCFCF"
+        },
+        nav: {
+          DEFAULT: "#827F98"
+        },
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
