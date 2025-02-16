@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { gilroy } from "../config";
 
 export const metadata: Metadata = {
   title: "CCHUB Dev Challenge",
@@ -12,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${gilroy.variable} antialiased`}>
         <main className="flex h-screen">
           <section className="w-full md:w-[45%] flex items-center justify-center">
             {children}
