@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { gilroy } from "./config";
+import { gilroy } from "../config";
 
 export const metadata: Metadata = {
-  title: "CCHUB Dev Challenge",
-  description: "Welcome to the CCHUB Dev Challenge",
+  title: "Dashboard",
+  description: "The CCHUB Dev Challenge",
 };
 
 export default function RootLayout({
