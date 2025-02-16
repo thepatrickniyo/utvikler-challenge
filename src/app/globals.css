@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: var(--font-gilroy);
+  }
+
+  body {
+    font-family: var(--font-gilroy);
+    font-weight: 300; /* This sets Light as default */
+  }
+
+  * {
+    font-family: inherit;
+  }
+}
+
+@layer utilities {
+  .font-gilroy {
+    font-family: var(--font-gilroy);
+  }
+  
+  .font-gilroy-light {
+    font-family: var(--font-gilroy);
+    font-weight: 300;
+  }
+  
+  .font-gilroy-extrabold {
+    font-family: var(--font-gilroy);
+    font-weight: 800;
+  }
+}
+
+@keyframes gentle-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-pulse {
+  animation: gentle-pulse 4s ease-in-out infinite;
+}
