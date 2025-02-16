@@ -27,6 +27,7 @@ export default {
   			warning: {
   				default: '#FF7A00'
   			},
+        "dark-gray": "#808080",
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'

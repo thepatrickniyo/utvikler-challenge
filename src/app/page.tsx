@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -22,10 +23,12 @@ export default function Home() {
           Your journey to excellence starts here.
         </p>
         
+        <Link href="/signin">
         <Button className="group bg-white hover:bg-white/90 text-primary px-8 py-6 text-lg font-gilroy-extrabold transition-all duration-300 hover:shadow-xl hover:shadow-white/10">
           Get Started
           <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
         </Button>
+        </Link>
       </article>
     </main>
   );

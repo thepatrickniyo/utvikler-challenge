@@ -41,3 +41,9 @@
 .animate-pulse {
   animation: gentle-pulse 4s ease-in-out infinite;
 }
+
+.auth-banner-bg {
+  background-image: url('/assets/auth-banner.svg');
+  background-size: cover;
+  background-position: center;
+}

@@ -1,24 +1,8 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
+import { gilroy } from "./config";
 
-const gilroy = localFont({
-  src: [
-    {
-      path: '../../public/fonts/gilroy/Gilroy-Light.otf',
-      weight: '300',
-      style: 'normal',
-    },
-    {
-      path: '../../public/fonts/gilroy/Gilroy-Extrabold.otf',
-      weight: '800',
-      style: 'normal',
-    }
-  ],
-  variable: '--font-gilroy',
-  display: 'swap',
-  preload: true,
-});
+
 
 export const metadata: Metadata = {
   title: "CCHUB Dev Challenge",
