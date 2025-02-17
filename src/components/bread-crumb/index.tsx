@@ -6,9 +6,9 @@ interface BreadCrumbProps {
   children?: React.ReactNode
 }
 
-export default function BreadCrumb({ links, children }: BreadCrumbProps) {
+const BreadCrumb: React.FC<BreadCrumbProps> = ({ links, children }) => {
   return (
-    <menu className="flex px-[8%] py-4 justify-between border-b">
+    <menu className="flex flex-col sm:flex-row px-[8%] py-4 justify-between border-b">
       <section>
         <nav aria-label="Breadcrumb">
           <ol className="flex flex-wrap items-center">
@@ -22,7 +22,7 @@ export default function BreadCrumb({ links, children }: BreadCrumbProps) {
                   )}
                   
                   {isLastItem ? (
-                    <span className="text-xl  text-black">
+                    <span className="text-xl text-black">
                       {link.label}
                     </span>
                   ) : (
@@ -40,7 +40,13 @@ export default function BreadCrumb({ links, children }: BreadCrumbProps) {
         </nav>
       </section>
       
-      {children}
+      {children && (
+        <section className="mt-4 sm:mt-0 sm:ml-4">
+          {children}
+        </section>
+      )}
     </menu>
   );
 }
+
+export default BreadCrumb;

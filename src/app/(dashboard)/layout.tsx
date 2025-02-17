@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${gilroy.variable} antialiased`}>
-        <main className="bg-gray-100 h-screen w-screen">
+        <main className="bg-gray-100 w-screen min-h-screen h-screen md:h-max overflow-y-scroll md:overflow-y-hidden">
         <DashboardNavBar />
         {children}
         </main>

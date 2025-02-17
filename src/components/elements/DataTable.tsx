@@ -10,7 +10,7 @@ export default function DataTable() {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState('');
   const [sortField, setSortField] = useState('hospital_id');
-  const itemsPerPage = 7;
+  const itemsPerPage = 6;
   
   // Filter and sort patients
   const filteredPatients = patients.filter(patient => 

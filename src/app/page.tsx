@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { gilroy } from "./config";
 
 export default function Home() {
   return (
-    <main className="w-screen h-screen relative overflow-hidden bg-gradient-to-br from-primary/90 to-primary flex items-center justify-center">
+    <main  className={`${gilroy.variable} antialiased w-screen h-screen relative overflow-hidden bg-gradient-to-br from-primary/90 to-primary flex items-center justify-center`}>
       {/* Animated gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent animate-pulse" />
       
