@@ -5,7 +5,7 @@ import { X } from "lucide-react";
 
 export default function PackageScan(){
     const [isScanned, setIsScanned] = useState(false);
-    const [showScannedInfo, setShowScannedInfo] = useState(true);
+    const [showScannedInfo, setShowScannedInfo] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
 
     const onScan = () => {
