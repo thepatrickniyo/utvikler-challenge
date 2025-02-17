@@ -1,7 +1,28 @@
+import BreadCrumb from "@/components/bread-crumb";
+import DataTable from "@/components/elements/DataTable";
+import { Button } from "@/components/ui/button";
+import { Plus } from "lucide-react";
+
 export default function Dashboard(){
+    const links = [{
+        label: "Patients",
+        url: "/patients"
+    }]
+
     return (
         <main className="">
-            <h1>Dashboard</h1>
+            <BreadCrumb 
+                links={links}
+            >
+                <Button className="bg-primary text-white text-sm font-semibold py-4 px-6">
+                    <Plus />
+                    Add Patient
+                </Button>
+            </BreadCrumb>
+
+            <section className="px-[6%]">
+                <DataTable />
+            </section>
         </main>
     )
 }
