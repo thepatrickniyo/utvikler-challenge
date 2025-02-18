@@ -8,7 +8,7 @@ export const gilroy = localFont({
         style: 'normal',
       },
       {
-        path: '../../public/fonts/gilroy/Gilroy-Extrabold.otf',
+        path: '../../public/fonts/gilroy/Gilroy-ExtraBold.otf',
         weight: '800',
         style: 'normal',
       }
