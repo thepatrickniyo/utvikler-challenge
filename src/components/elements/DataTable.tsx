@@ -4,6 +4,7 @@ import { patients } from "@/helpers/constants/patients";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "../ui/button";
 import { ChevronDown, Search } from "lucide-react";
+import Link from "next/link";
 
 export default function DataTable() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -170,7 +171,7 @@ export default function DataTable() {
   };
 
   return (
-    <div className="p-4">
+    <div className="py-4">
       {/* Sort and Search Controls */}
       <div className="flex justify-between items-center mb-4   rounded py-2">
         {/* Sort Dropdown */}
@@ -240,7 +241,9 @@ export default function DataTable() {
                 }`}>
                   {patient.status}
                 </div>
-                <Button className="hover:text-white text-xs px-6 font-semibold text-primary border-[0.5px] border-primary/60 bg-white shadow-none">View</Button>
+                <Link href={`/patients/${patient.id}`} >
+                    <Button className="hover:text-white text-xs px-6 font-semibold text-primary border-[0.5px] border-primary/60 bg-white shadow-none">View</Button>
+                </Link>
                </div>
               </TableCell>
             </TableRow>

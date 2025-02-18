@@ -20,7 +20,7 @@ export default function Dashboard(){
                 </Button>
             </BreadCrumb>
 
-            <section className="px-[6%]">
+            <section className="px-[8%]">
                 <DataTable />
             </section>
         </main>

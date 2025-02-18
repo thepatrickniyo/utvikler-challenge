@@ -18,7 +18,7 @@ export default function DashboardNavBar() {
   const navigationLinks = [
     { title: "Overview", href: "/overview", icon: <OverviewIcon isActive={pathname === "/overview"} /> },
     { title: "Deliveries", href: "/deliveries", icon: <DeliveriesIcon isActive={pathname === "/deliveries"} /> },
-    { title: "Patients", href: "/dashboard", icon: <PatientsIcon isActive={pathname === "/dashboard"} /> },
+    { title: "Patients", href: "/patients", icon: <PatientsIcon isActive={pathname?.includes("/patients")} /> },
     { title: "Dispatch Riders", href: "/dispatch-riders", icon: <RidersIcon isActive={pathname === "/dispatch-riders"} /> },
     { title: "Admin", href: "/admin", icon: <AdminIcon isActive={pathname === "/admin"} /> },
   ];
@@ -37,7 +37,7 @@ export default function DashboardNavBar() {
       <div className={` absolute md:relative top-16 md:top-0 left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none md:flex md:gap-8 transition-all duration-300 ${isOpen ? "block" : "hidden"}`}>
         <ul className="flex flex-col md:flex-row md:gap-9 md:items-center relative">
           {navigationLinks.map((link, index) => {
-            const isActive = pathname === link.href;
+            const isActive = pathname?.includes(link.href);
             return (
               <li key={index} className="relative group  py-2">
                 <Link
