@@ -4,6 +4,7 @@ import BreadCrumb from "@/components/bread-crumb";
 import { Button } from "@/components/ui/button";
 import { patients } from "@/helpers/constants/patients";
 import { PenLine } from "lucide-react";
+import Link from "next/link";
 
 export default function PatientData() {
   const patient = patients[0];
@@ -32,9 +33,11 @@ export default function PatientData() {
               {patient?.next_delivery_date}, in 2 days
             </label>
           </section>
+          <Link href={`/patients/${patient?.id}/assign-package`}>
           <Button className="bg-primary text-white text-sm font-semibold py-4 px-6">
             Assign Package to Patient
           </Button>
+          </Link>
         </section>
       </BreadCrumb>
 
@@ -89,14 +92,14 @@ export default function PatientData() {
                   <div className="flex flex-row items-start justify-start gap-2">
                     <div className="flex flex-col items-start text-sm py-4 px-[3rem] w-[400px]">
                       <h1 className="font-semibold text-lg">
-                        Patient's Information
+                        Patient&apos;s Information
                       </h1>
                       <p className="text-gray-400">
                         Personal Information about Patient
                       </p>
                       <button className="flex flex-row gap-2 text-primary border border-primary px-6 py-2 mt-4">
                         <PenLine />
-                        Edit Patient's Information
+                        Edit Patient&apos;s Information
                       </button>
                     </div>
                     {/* patient inputs */}
