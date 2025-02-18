@@ -19,13 +19,13 @@ export default {
   				foreground: 'hsl(var(--primary-foreground))'
   			},
   			success: {
-  				default: '#01A85A'
+  				DEFAULT : '#01A85A'
   			},
   			danger: {
-  				default: '#F42C1F'
+  				DEFAULT: '#F42C1F'
   			},
   			warning: {
-  				default: '#FF7A00'
+  				DEFAULT: '#FF7A00'
   			},
         "dark-gray": "#808080",
         dashboard: {

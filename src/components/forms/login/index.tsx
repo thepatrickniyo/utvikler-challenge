@@ -26,7 +26,7 @@ export default function LoginForm(){
                 </section>
 
                 <section>
-               <Link href="/dashboard">
+               <Link href="/patients">
                     <Button className="w-full mt-6 bg-primary text-white p-6 text-sm font-semibold text-md">Login</Button>
                 </Link>
                 </section>
